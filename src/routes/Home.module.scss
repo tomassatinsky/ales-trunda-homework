@@ -1,0 +1,24 @@
+.dashboardContent {
+  @media screen and (min-width:700px) {
+    display: flex;
+  }
+}
+
+.dashboardContentCalc {
+  @media screen and (min-width:700px) {
+    padding-left: 30px;
+    width: 40%;
+  }
+}
+
+.dashboardContentChart {
+  height: 400px;
+
+  @media screen and (min-width:700px) {
+    width: 60%;
+  }
+}
+
+.dashboardsDateFilter {
+  margin-bottom: 10px;
+}

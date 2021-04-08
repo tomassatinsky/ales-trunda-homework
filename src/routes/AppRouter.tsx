@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import { WorkspaceProvider } from "../contexts/Workspace";
 import Page from "../components/Page";
@@ -31,7 +31,6 @@ const AppRouter: React.FC = () => {
                     <Route exact path="/dashboard" component={() => <Page>Dashboard</Page>} />
                     <Route exact path="/login" component={Login} />
                     <Route exact path="/logout" component={Logout} />
-                    {/* DELETE THIS LINE */} <Redirect to="/welcome" />
                     {/* Uncomment the next line if you want to redirect unauthorized users to login form */}
                     {/* <RedirectIfNotLoggedIn /> */}
                 </WorkspaceProvider>
